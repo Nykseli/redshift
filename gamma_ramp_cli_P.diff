@@ -1,0 +1,556 @@
+diff --git a/configure.ac b/configure.ac
+index b411626..236852a 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -2,7 +2,7 @@
+ # Process this file with autoconf to produce a configure script.
+ 
+ AC_PREREQ([2.69])
+-AC_INIT([redshift], [1.12], [https://github.com/jonls/redshift/issues])
++AC_INIT([redshift], [1.12.1], [https://github.com/jonls/redshift/issues])
+ AC_CONFIG_SRCDIR([src/redshift.c])
+ AC_CONFIG_HEADERS([config.h])
+ AC_CONFIG_MACRO_DIR([m4])
+diff --git a/po/ar.po b/po/ar.po
+index 5dd208f..db337af 100644
+--- a/po/ar.po
++++ b/po/ar.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/be.po b/po/be.po
+index 0767e93..2233d18 100644
+--- a/po/be.po
++++ b/po/be.po
+@@ -382,7 +382,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/bg.po b/po/bg.po
+index 557758c..ee34da6 100644
+--- a/po/bg.po
++++ b/po/bg.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/ca.po b/po/ca.po
+index 0bd8ce6..20bad8b 100644
+--- a/po/ca.po
++++ b/po/ca.po
+@@ -383,7 +383,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/cs.po b/po/cs.po
+index eb1b5b6..2f41112 100644
+--- a/po/cs.po
++++ b/po/cs.po
+@@ -384,7 +384,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+@@ -400,7 +400,7 @@ msgstr ""
+ "  -o\t\tJednorázový režim (neupravovat teplotu barev průběžně)\n"
+ "  -O TEPL\tJednorázový ruční režim (nastavit teplotu barev)\n"
+ "  -p\t\tRežim výpisu (pouze vypsat parametry a skončit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/da.po b/po/da.po
+index cd943e1..d4106df 100644
+--- a/po/da.po
++++ b/po/da.po
+@@ -382,7 +382,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/de.po b/po/de.po
+index 90dc99c..f39b6ae 100644
+--- a/po/de.po
++++ b/po/de.po
+@@ -383,7 +383,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/el.po b/po/el.po
+index cbb98ad..9feaa6e 100644
+--- a/po/el.po
++++ b/po/el.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/en_GB.po b/po/en_GB.po
+index 8642608..250dceb 100644
+--- a/po/en_GB.po
++++ b/po/en_GB.po
+@@ -381,7 +381,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+@@ -397,7 +397,7 @@ msgstr ""
+ "  -o\t\tOne shot mode (do not continuously adjust colour temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set colour temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new colour effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new colour effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between colour temperatures\n"
+ "  -t DAY:NIGHT\tColour temperature to set at daytime/night\n"
+diff --git a/po/es.po b/po/es.po
+index 48032d1..5a461cc 100644
+--- a/po/es.po
++++ b/po/es.po
+@@ -385,7 +385,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/et.po b/po/et.po
+index 6ff6644..c746a99 100644
+--- a/po/et.po
++++ b/po/et.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/eu.po b/po/eu.po
+index 3467d7c..4c98faf 100644
+--- a/po/eu.po
++++ b/po/eu.po
+@@ -368,7 +368,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/fi.po b/po/fi.po
+index 83f5f8d..4483bcb 100644
+--- a/po/fi.po
++++ b/po/fi.po
+@@ -369,7 +369,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/fr.po b/po/fr.po
+index 1d310f2..a314c4e 100644
+--- a/po/fr.po
++++ b/po/fr.po
+@@ -386,7 +386,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/gl.po b/po/gl.po
+index dceea22..ad19ef7 100644
+--- a/po/gl.po
++++ b/po/gl.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/he.po b/po/he.po
+index b276320..1599444 100644
+--- a/po/he.po
++++ b/po/he.po
+@@ -370,7 +370,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/hi.po b/po/hi.po
+index bab712f..46b3b74 100644
+--- a/po/hi.po
++++ b/po/hi.po
+@@ -368,7 +368,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/hr.po b/po/hr.po
+index 6cca5d2..6c7f1ac 100644
+--- a/po/hr.po
++++ b/po/hr.po
+@@ -368,7 +368,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/hu.po b/po/hu.po
+index 1492f8b..5b394bc 100644
+--- a/po/hu.po
++++ b/po/hu.po
+@@ -382,7 +382,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/it.po b/po/it.po
+index dae4a99..5cb0f2f 100644
+--- a/po/it.po
++++ b/po/it.po
+@@ -382,7 +382,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/ja.po b/po/ja.po
+index 77a450b..184029b 100644
+--- a/po/ja.po
++++ b/po/ja.po
+@@ -372,7 +372,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/ka.po b/po/ka.po
+index 9360b36..0f103ce 100644
+--- a/po/ka.po
++++ b/po/ka.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/lt.po b/po/lt.po
+index 7ae6298..058260a 100644
+--- a/po/lt.po
++++ b/po/lt.po
+@@ -376,7 +376,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/nb.po b/po/nb.po
+index 74392ad..fbfad02 100644
+--- a/po/nb.po
++++ b/po/nb.po
+@@ -377,7 +377,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/nl.po b/po/nl.po
+index 09dc2ab..6aa8580 100644
+--- a/po/nl.po
++++ b/po/nl.po
+@@ -385,7 +385,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/pl.po b/po/pl.po
+index 6585d99..5f27f40 100644
+--- a/po/pl.po
++++ b/po/pl.po
+@@ -378,7 +378,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/pt.po b/po/pt.po
+index a82d6a1..35c0342 100644
+--- a/po/pt.po
++++ b/po/pt.po
+@@ -370,7 +370,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/pt_BR.po b/po/pt_BR.po
+index 6eeee34..cec9f7e 100644
+--- a/po/pt_BR.po
++++ b/po/pt_BR.po
+@@ -382,7 +382,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/redshift.pot b/po/redshift.pot
+index 619f4a5..51c4d3d 100644
+--- a/po/redshift.pot
++++ b/po/redshift.pot
+@@ -361,7 +361,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/ro.po b/po/ro.po
+index 21dc2c3..50e4279 100644
+--- a/po/ro.po
++++ b/po/ro.po
+@@ -364,7 +364,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/ru.po b/po/ru.po
+index ee7587d..52b7798 100644
+--- a/po/ru.po
++++ b/po/ru.po
+@@ -377,7 +377,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/sr.po b/po/sr.po
+index 9a8f67f..718ff55 100644
+--- a/po/sr.po
++++ b/po/sr.po
+@@ -377,7 +377,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/sv.po b/po/sv.po
+index d3e9772..24088fe 100644
+--- a/po/sv.po
++++ b/po/sv.po
+@@ -381,7 +381,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/tr.po b/po/tr.po
+index ce0ad32..0a32de2 100644
+--- a/po/tr.po
++++ b/po/tr.po
+@@ -365,7 +365,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/uk.po b/po/uk.po
+index 2a980bf..475fee9 100644
+--- a/po/uk.po
++++ b/po/uk.po
+@@ -382,7 +382,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/zh_CN.po b/po/zh_CN.po
+index e638340..df51bf2 100644
+--- a/po/zh_CN.po
++++ b/po/zh_CN.po
+@@ -368,7 +368,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/po/zh_TW.po b/po/zh_TW.po
+index 6894b6e..dde4192 100644
+--- a/po/zh_TW.po
++++ b/po/zh_TW.po
+@@ -370,7 +370,7 @@ msgid ""
+ "  -o\t\tOne shot mode (do not continuously adjust color temperature)\n"
+ "  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ "  -p\t\tPrint mode (only print parameters and exit)\n"
+-"  -P\t\tReset existing gamma ramps before applying new color effect\n"
++"  -P\t\tPreserve existing gamma ramps before applying new color effect\n"
+ "  -x\t\tReset mode (remove adjustment from screen)\n"
+ "  -r\t\tDisable fading between color temperatures\n"
+ "  -t DAY:NIGHT\tColor temperature to set at daytime/night\n"
+diff --git a/redshift.1 b/redshift.1
+index ab45a4b..f33731c 100644
+--- a/redshift.1
++++ b/redshift.1
+@@ -71,7 +71,7 @@ to clear the existing gamma ramps before applying the new color temperature.
+ Print mode (only print parameters and exit).
+ .TP
+ \fB\-P\fR
+-Reset existing gamma ramps before applying new color effect.
++Preserve existing gamma ramps before applying new color effect.
+ .TP
+ \fB\-x\fR
+ Reset mode (remove adjustment from screen).
+diff --git a/src/options.c b/src/options.c
+index 33bf623..058aa6c 100644
+--- a/src/options.c
++++ b/src/options.c
+@@ -189,7 +189,7 @@ print_help(const char *program_name)
+ 		" color temperature)\n"
+ 		"  -O TEMP\tOne shot manual mode (set color temperature)\n"
+ 		"  -p\t\tPrint mode (only print parameters and exit)\n"
+-		"  -P\t\tReset existing gamma ramps before applying new"
++		"  -P\t\tPreserve existing gamma ramps before applying new"
+ 		" color effect\n"
+ 		"  -x\t\tReset mode (remove adjustment from screen)\n"
+ 		"  -r\t\tDisable fading between color temperatures\n"
+@@ -320,7 +320,7 @@ options_init(options_t *options)
+ 	options->provider_args = NULL;
+ 
+ 	options->use_fade = -1;
+-	options->preserve_gamma = 1;
++	options->preserve_gamma = 0;
+ 	options->mode = PROGRAM_MODE_CONTINUAL;
+ 	options->verbose = 0;
+ }
+@@ -451,7 +451,7 @@ parse_command_line_option(
+ 		options->mode = PROGRAM_MODE_PRINT;
+ 		break;
+ 	case 'P':
+-		options->preserve_gamma = 0;
++		options->preserve_gamma = 1;
+ 		break;
+ 	case 'r':
+ 		options->use_fade = 0;
