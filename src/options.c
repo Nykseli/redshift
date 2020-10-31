@@ -189,7 +189,7 @@ print_help(const char *program_name)
 		" color temperature)\n"
 		"  -O TEMP\tOne shot manual mode (set color temperature)\n"
 		"  -p\t\tPrint mode (only print parameters and exit)\n"
-		"  -P\t\tReset existing gamma ramps before applying new"
+		"  -P\t\tPreserve existing gamma ramps before applying new"
 		" color effect\n"
 		"  -x\t\tReset mode (remove adjustment from screen)\n"
 		"  -r\t\tDisable fading between color temperatures\n"
@@ -320,7 +320,7 @@ options_init(options_t *options)
 	options->provider_args = NULL;
 
 	options->use_fade = -1;
-	options->preserve_gamma = 1;
+	options->preserve_gamma = 0;
 	options->mode = PROGRAM_MODE_CONTINUAL;
 	options->verbose = 0;
 }
@@ -451,7 +451,7 @@ parse_command_line_option(
 		options->mode = PROGRAM_MODE_PRINT;
 		break;
 	case 'P':
-		options->preserve_gamma = 0;
+		options->preserve_gamma = 1;
 		break;
 	case 'r':
 		options->use_fade = 0;
